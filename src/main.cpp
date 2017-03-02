@@ -4,7 +4,8 @@
 #include "database.h"
 #include "txtparser.h"
 
-#define EMP_PROJ_PATH "C:\\vs_projects\\DbNormalizer++\\DbNormalizer++\\emp_proj.txt"
+#define DOC_FOLDER "doc"
+#define EMP_PROJ_FILENAME "emp_proj.txt"
 
 // ============================================================================= 
 // TODO:
@@ -29,7 +30,7 @@ int main()
 	{
 
 		TxtParser parser;
-		parser.Open(EMP_PROJ_PATH);
+		parser.Open(std::string(DOC_FOLDER) + "\\" + EMP_PROJ_FILENAME);
 		db = parser.Parse(); 
 
 	}	// Discard parser; it is not needed anymore.
