@@ -244,5 +244,9 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 
-# ReadMe.txt
-DbNormalizer++/ReadMe.txt
+# Misc
+ReadMe.txt
+*.vcx*
+include/targetver.h
+include/stdafx.h
+src/stdafx.cpp
